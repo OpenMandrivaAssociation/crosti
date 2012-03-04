@@ -6,6 +6,7 @@ License:	GPLv3+
 Group:		Graphics
 URL:		http://
 Source0:	%{name}-%{version}-source.zip
+Patch0:		crosti-1.6.0-mdv-homepath.patch
 BuildRequires:	libqt4-devel
 
 %description
@@ -27,6 +28,7 @@ Features
 
 %prep
 %setup -q -n source
+%patch0 -p1
 
 %build
 pushd Repository/%{name}-%{version}
