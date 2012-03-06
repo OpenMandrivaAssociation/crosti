@@ -1,12 +1,13 @@
 Name:		crosti
 Summary:	Tool to create cross stitch scheme from custom image
 Version:	1.6.0
-Release:	1
+Release:	2
 License:	GPLv3+
 Group:		Graphics
 URL:		http://
 Source0:	%{name}-%{version}-source.zip
 Patch0:		crosti-1.6.0-mdv-homepath.patch
+Patch1:		crosti-1.6.0-mdv-desktop.patch
 BuildRequires:	libqt4-devel
 
 %description
@@ -29,6 +30,7 @@ Features
 %prep
 %setup -q -n source
 %patch0 -p1
+%patch1 -p1
 
 %build
 pushd Repository/%{name}-%{version}
