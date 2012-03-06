@@ -1,7 +1,7 @@
 Name:		crosti
 Summary:	Tool to create cross stitch scheme from custom image
 Version:	1.6.0
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Graphics
 URL:		http://
@@ -42,17 +42,17 @@ popd
 pushd Repository/%{name}-%{version}
 make install INSTALL_ROOT=%{buildroot}
 popd
-#pushd crosti
-#
-#install -D -m 755 crosti %{buildroot}/%{_bindir}/%{name}
-#install -d %{buildroot}/%{_datadir}/
-#cp -rf system %{buildroot}/%{_datadir}/%{name}
-#install -d %{buildroot}%{_docdir}/%{name}
-#
-#popd
+
+for size in 16 32
+do
+install -d %{buildroot}%{_iconsdir}/hicolor/${size}x${size}/apps/
+mv %{buildroot}%{_datadir}/%{name}/system/image/crosti${size}.png \
+	%{buildroot}%{_iconsdir}/hicolor/${size}x${size}/apps/%{name}.png
+done
 
 %files
 %doc crosti/readme.txt
 %{_bindir}/%{name}
 %{_datadir}/%{name}
 %{_datadir}/applications/%{name}.desktop
+%{_iconsdir}/hicolor/*/apps/*
