@@ -1,0 +1,13 @@
+Index: source/Repository/crosti-1.7.0/crosti.desktop
+===================================================================
+--- source.orig/Repository/crosti-1.7.0/crosti.desktop
++++ source/Repository/crosti-1.7.0/crosti.desktop
+@@ -2,7 +2,7 @@
+ Version=1.0
+ Categories=Graphics;2DGraphics;RasterGraphics;
+ Exec=crosti %f
+-MimeType=image/bmp;image/gif;image/jpeg;image/png;image/tiff;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/svg;image/vnd.microsoft.icon;
++MimeType=text/x-cst;image/bmp;image/gif;image/jpeg;image/png;image/tiff;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/svg;image/vnd.microsoft.icon;
+ GenericName=Cross stitch editor
+ GenericName[ru]=Редактор схем для вышивания крестом
+ Comment=Build your personal cross stitches
