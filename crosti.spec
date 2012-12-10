@@ -58,3 +58,23 @@ done
 %{_datadir}/applications/%{name}.desktop
 %{_datadir}/mime/packages/%{name}.xml
 %{_iconsdir}/hicolor/*/apps/*
+
+
+%changelog
+* Sun Apr 08 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.7.0-1
++ Revision: 789888
+- update to 1.7.0
+
+* Tue Mar 06 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.6.0-3
++ Revision: 782423
+- move icons to iconsdir
+
+* Tue Mar 06 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.6.0-2
++ Revision: 782379
+- fix desktop file
+- use home directory instead /usr/share
+
+* Fri Mar 02 2012 Dmitry Mikhirev <dmikhirev@mandriva.org> 1.6.0-1
++ Revision: 781742
+- imported package crosti
+
