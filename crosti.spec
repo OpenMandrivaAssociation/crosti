@@ -8,7 +8,7 @@ URL:		https://sites.google.com/site/crostiapp/
 Source0:	%{name}-%{version}-source.zip
 Source1:	crosti.xml
 Patch0:		crosti-1.7.0-mdv-desktop.patch
-BuildRequires:	libqt4-devel
+BuildRequires:	pkgconfig(Qt3Support)
 
 %description
 This tool allows you to make your own unique cross stitch scheme from custom
