@@ -1,7 +1,7 @@
 Name:		crosti
 Summary:	Tool to create cross stitch scheme from custom image
 Version:	1.7.0
-Release:	2
+Release:	3
 License:	GPLv3+
 Group:		Graphics
 URL:		https://sites.google.com/site/crostiapp/
