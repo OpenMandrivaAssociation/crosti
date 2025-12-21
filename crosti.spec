@@ -8,6 +8,7 @@ URL:		https://sites.google.com/site/crostiapp/
 Source0:	%{name}-%{version}-source.zip
 Source1:	crosti.xml
 Patch0:		crosti-1.7.0-mdv-desktop.patch
+BuildRequires:	make
 BuildRequires:	pkgconfig(Qt3Support)
 
 %description
