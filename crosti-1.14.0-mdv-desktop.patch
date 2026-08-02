@@ -1,0 +1,19 @@
+From: OpenMandriva packaging
+Subject: desktop: keep text/x-cst association; fix image/svg MIME
+
+Original mdv patch added text/x-cst to MimeType so .cst schemes open
+with crosti. Upstream 1.14.0 already includes text/x-cst; rebase keeps
+that association and normalizes image/svg -> image/svg+xml on the same
+MimeType line.
+
+--- a/src/crosti.desktop	2014-02-21 19:31:32.000000000 +0100
++++ b/src/crosti.desktop	2026-08-02 16:40:38.672390859 +0200
+@@ -2,7 +2,7 @@
+ Version=1.0
+ Categories=Graphics;2DGraphics;RasterGraphics;
+ Exec=crosti %f
+-MimeType=text/x-cst;image/bmp;image/gif;image/jpeg;image/png;image/tiff;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/svg;image/vnd.microsoft.icon;
++MimeType=text/x-cst;image/bmp;image/gif;image/jpeg;image/png;image/tiff;image/x-portable-bitmap;image/x-portable-graymap;image/x-portable-pixmap;image/x-xbitmap;image/x-xpixmap;image/svg+xml;image/vnd.microsoft.icon;
+ GenericName=Cross stitch editor
+ GenericName[ru]=Редактор схем для вышивания крестом
+ Comment=Build your personal cross stitches

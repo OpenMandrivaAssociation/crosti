@@ -1,13 +1,13 @@
 Name:		crosti
 Summary:	Tool to create cross stitch scheme from custom image
-Version:	1.7.0
-Release:	3
+Version:	1.14.0
+Release:	1
 License:	GPLv3+
 Group:		Graphics
 URL:		https://sites.google.com/site/crostiapp/
 Source0:	%{name}-%{version}-source.zip
 Source1:	crosti.xml
-Patch0:		crosti-1.7.0-mdv-desktop.patch
+Patch0:		crosti-1.14.0-mdv-desktop.patch
 BuildRequires:	make
 BuildRequires:	pkgconfig(Qt3Support)
 
@@ -29,8 +29,8 @@ Features
   XPM, PDF, CST (crosti scheme text file).
 
 %prep
-%setup -q -n source
-%patch0 -p1
+%setup -q -c -n %{name}-%{version}
+%patch -P0 -p1
 
 %build
 pushd Repository/%{name}-%{version}
